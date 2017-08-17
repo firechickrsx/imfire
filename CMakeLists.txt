@@ -1,0 +1,23 @@
+#工程名称
+project(imfire)
+#支持的最低cmake版本
+cmake_minimum_required(VERSION 2.8)
+
+#支持cpp++11
+add_compile_options(-std=c++11)
+
+
+set(IMFIRE_ROOT_DIR ${PROJECT_SOURCE_DIR})
+#MESSAGE("IMFIRE_ROOT_DIR = ${IMFIRE_ROOT_DIR} ")
+#MESSAGE("PROJECT_SOURCE_DIR=${PROJECT_SOURCE_DIR}")
+
+set(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/build)
+set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/build)
+
+#IF(IMFIRE_ROOT_DIR)
+#MESSAGE("123")	
+#ENDIF(IMFIRE_ROOT_DIR)
+
+ADD_SUBDIRECTORY(base)
+ADD_SUBDIRECTORY(server)
+

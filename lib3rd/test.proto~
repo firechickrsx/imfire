@@ -1,0 +1,6 @@
+package ASpace;     //相当于命名空间
+syntax = "proto3"; 
+
+message A{      //类1
+    required int32 a = 1;  
+}

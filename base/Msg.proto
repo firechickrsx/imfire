@@ -1,0 +1,154 @@
+syntax = "proto3"; 
+package ImFireMsg;     //相当于命名空间
+
+enum SessionType{
+	
+}
+
+
+//心跳
+message msg_heart_beat{
+    uint64 userId =1;	
+}
+
+
+message msgconf_heart_beat{
+    uint64 user_id =1;
+}
+
+//客户端登录
+message msg_login{     
+    string userName =1;
+    string password =2;
+    string token =3;
+}
+
+
+message msgconf_login{     
+    int32  result =1;
+    string userName =2;
+    uint64 userId =3;	
+}
+
+
+message msg_logout{
+   uint64 userId =1;
+}
+
+//客户端登出
+message msgonf_logout{
+   uint64 userId =1;
+}
+
+
+//服务端通知客户端进行登出或服务状态改变通知
+message msg_serverReset{
+    int32 result;
+}
+
+
+//查询用户自己的信息
+message msg_getUserInfo{
+    uint64 userId =1;
+}
+
+message msgconf_getUserInfo{
+   int32 result = 1;
+   uint64 userId =2;
+   string userName =3;
+}
+
+
+message msg_setUserInfo{
+    
+}
+
+
+
+//客户端发送一对一聊天消息
+message msg_sendTalkMsg{
+    string msgContent =1;
+    uint64 senderId = 2;
+    uint64 receiverId =3;
+    uint64 localMsgId =4;   //客户端本地定义的消息id，用于消息确认。
+    uint64 localTimestamp =5; //客户端本地的发送时间。
+}
+
+message msgconf_sendTalkMsg{
+    uint32 result;
+    uint64 localMsgId =1;
+    uint64 msgId =2;  //数据库中定位消息的id,这个id是两个人聊天记录所有记录中唯一的，而且递增。可以用于获取聊天记录
+}
+
+
+//客户端接收到聊天消息
+message msg_receiveTalkMsg{
+    string msgContent =1;
+    uint64 msgId =2;
+    uint64 senderId =3;
+    uint64 receiverId =4;
+}
+
+message msgconf_receiveTalkMsg{
+   uint64 msgId =1;	
+}
+
+//客户端发送群聊消息
+message msg_sendGroupTalkMsg{
+    string msgContent =1;
+    uint64 senderId =2;
+    uint64 receiverId =3;
+    uint64 localMsgId =4;
+    uint64 localTimestamp =5;
+}
+
+message msgconf_sendGroupTalkMsg{
+    uint64 localMsgId =1;
+    uint64 msgId =2;  //数据库中定位消息的id,这个id是两个人聊天记录所有记录中唯一的，而且递增。可以用于获取聊天记录
+}
+
+
+//收到群聊消息
+message msg_receiveGroupTalkMsg{
+    string msgContent =1;
+    uint64 msgId =2;
+    uint64 senderId =3;
+    uint64 receiverId =4;	
+}
+
+message mesgconf_receiveGroupTalkMsg{
+    uint64 msgId =1;	
+}
+
+
+//申请添加好友
+message msg_addFriend{     
+    uint64 userId =1;
+    uint64 targetId = 2;
+}
+
+message msgconf_addFriend{
+    int32 result =1;
+    uint64 userId =2; 
+    uint64 targetId =3;
+}
+
+
+message msg_frinedInfo{
+    uint64 userId =1;
+    string nickName =2;
+}
+
+
+//获取好友列表
+message msg_getFriendInfoList{     
+    uint64 userId =1;
+}
+
+//获取好友列表回
+message msgconf_getFriendInfoList{
+    uint64 userId =1;
+    list<msg_friendInfo> friendInfoList =2;	    
+}
+
+

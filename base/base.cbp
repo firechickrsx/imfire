@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+   <FileVersion major="1" minor="6" />
+   <Project>
+      <Option title="base" />
+      <Option makefile_is_custom="1" />
+      <Option compiler="gcc" />
+      <Option virtualFolders="CMake Files\;" />
+      <Build>
+      <Target title="all">
+         <Option working_dir="/home/firechick/imfire/base" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/firechick/imfire/base/Makefile&quot;  VERBOSE=1 all" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/firechick/imfire/base/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/firechick/imfire/base/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/firechick/imfire/base/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="base">
+         <Option output="/home/firechick/imfire/libx/libbase.a" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/firechick/imfire/base" />
+         <Option object_output="./" />
+         <Option type="2" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/firechick/imfire/base/../lib3rd/glog/include" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/4.8" />
+            <Add directory="/usr/include/c++/4.8/backward" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/4.8" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/firechick/imfire/base/Makefile&quot;  VERBOSE=1 base" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/firechick/imfire/base/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/firechick/imfire/base/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/firechick/imfire/base/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="base/fast">
+         <Option output="/home/firechick/imfire/libx/libbase.a" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/firechick/imfire/base" />
+         <Option object_output="./" />
+         <Option type="2" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/firechick/imfire/base/../lib3rd/glog/include" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/4.8" />
+            <Add directory="/usr/include/c++/4.8/backward" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/4.8" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/firechick/imfire/base/Makefile&quot;  VERBOSE=1 base/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/firechick/imfire/base/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/firechick/imfire/base/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/firechick/imfire/base/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="rebuild_cache">
+         <Option working_dir="/home/firechick/imfire/base" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/firechick/imfire/base/Makefile&quot;  VERBOSE=1 rebuild_cache" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/firechick/imfire/base/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/firechick/imfire/base/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/firechick/imfire/base/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      </Build>
+      <Unit filename="/home/firechick/imfire/base/DbConnectPool.cpp">
+      </Unit>
+      <Unit filename="/home/firechick/imfire/base/Event.cpp">
+      </Unit>
+      <Unit filename="/home/firechick/imfire/base/FileSystemCtrl.cpp">
+      </Unit>
+      <Unit filename="/home/firechick/imfire/base/Logging.cpp">
+      </Unit>
+      <Unit filename="/home/firechick/imfire/base/MsgLooper.cpp">
+      </Unit>
+      <Unit filename="/home/firechick/imfire/base/TcpManger.cpp">
+      </Unit>
+      <Unit filename="/home/firechick/imfire/base/TcpSocket.cpp">
+      </Unit>
+      <Unit filename="/home/firechick/imfire/base/Timer.cpp">
+      </Unit>
+      <Unit filename="/home/firechick/imfire/base/DbConnectPool.h">
+      </Unit>
+      <Unit filename="/home/firechick/imfire/base/Event.h">
+      </Unit>
+      <Unit filename="/home/firechick/imfire/base/FileSystemCtrl.h">
+      </Unit>
+      <Unit filename="/home/firechick/imfire/base/Logging.h">
+      </Unit>
+      <Unit filename="/home/firechick/imfire/base/MsgLooper.h">
+      </Unit>
+      <Unit filename="/home/firechick/imfire/base/TcpSocket.h">
+      </Unit>
+      <Unit filename="/home/firechick/imfire/base/Timer.h">
+      </Unit>
+      <Unit filename="/home/firechick/imfire/base/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\" />
+      </Unit>
+   </Project>
+</CodeBlocks_project_file>

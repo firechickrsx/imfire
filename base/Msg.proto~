@@ -1,0 +1,70 @@
+syntax = "proto3"; 
+package ImFireMsg;     //相当于命名空间
+
+//客户端登录
+message ImFireMsg_client_login{     
+    
+}
+//返回客户端登录结果
+message ImFireMsg_client_login_conf{     
+    
+}
+//客户端发送聊天消息
+message ImFireMsg_client_sendTalkMsg{     
+   
+
+ 
+}
+//客户端聊天消息确认
+message ImFireMsg_client_sendTalkMsg_conf{     
+    
+}
+
+
+//申请添加好友
+message ImFireMsg_client_addFriend{     
+    
+}
+//申请添加好友确认
+message ImFireMsg_client_addFriend_conf{     
+    
+}
+
+//获取好友列表
+message ImFireMsg_client_getFriendList{     
+    
+}
+
+//获取好友列表回复
+message ImFireMsg_client_getFriendList_conf{     
+    
+}
+
+message IMFIREMSG_{     
+    
+}
+
+message IMFIREMSG_{     
+    
+}
+
+message IMFIREMSG_{     
+    
+}
+
+message IMFIREMSG_{     
+    
+}
+
+
+message IMFIREMSG_{     
+    
+}
+message IMFIREMSG_{     
+    
+}
+
+message IMFIREMSG_{     
+    
+}
+
